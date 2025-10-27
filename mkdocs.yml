@@ -1,5 +1,6 @@
 site_name: SCHEMAS
-
+docs_dir: "md"
+site_dir: "docs"
 nav:
   - Schemas: index.md
   - Tipos de datos: md/datos.md
