@@ -1,0 +1,14 @@
+site_name: SCHEMAS
+
+nav:
+  - Schemas: index.md
+  - Tipos de datos: md/datos.md
+  - Facetas de los tipos de datos: md/facetas.md
+  - Elementos del lenguaje: md/elementos.md
+  - Definición de tipos de datos XML Schema: md/definicion.md
+  - Asociación con documentos XML: md/asociacion.md
+  - Documentación del esquema: md/documentacion.md
+  - Herramientas de creación y validación: md/herramientas.md
+  - Ejemplos: md/ejemplos.md
+
+theme: material
