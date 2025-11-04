@@ -11,6 +11,7 @@ También es usado para generar una ayuda contextual para cada elemento declarado
 
 **_Ejercicio resuelto:_** Ejemplo de documentación de un esquema.
 
+!!! example "Ejemplo de uso"
 ```xsd
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >

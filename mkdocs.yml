@@ -2,14 +2,73 @@ site_name: SCHEMAS
 docs_dir: "md"
 site_dir: "docs"
 nav:
-  - Schemas: index.md
-  - Tipos de datos: md/datos.md
-  - Facetas de los tipos de datos: md/facetas.md
-  - Elementos del lenguaje: md/elementos.md
-  - Definición de tipos de datos XML Schema: md/definicion.md
-  - Asociación con documentos XML: md/asociacion.md
-  - Documentación del esquema: md/documentacion.md
-  - Herramientas de creación y validación: md/herramientas.md
-  - Ejemplos: md/ejemplos.md
+  - LMSGI: index.md
+  - UND4-SCHEMAS (XSD): 
+      - Schemas (XSD): md/principal.md
+      - Tipos de datos: md/datos.md
+      - Facetas de los tipos de datos: md/facetas.md
+      - Elementos del lenguaje: md/elementos.md
+      - Definición de tipos de datos XML Schema: md/definicion.md
+      - Asociación con documentos XML: md/asociacion.md
+      - Documentación del esquema: md/documentacion.md
+      - Herramientas de creación y validación: md/herramientas.md
+  - CONSEJOS :
+      - Consejos: md/consejos.md
 
-theme: material
+theme:
+  name: material
+  custom_dir: overrides
+
+  features:
+    - navigation.sections      # Menú lateral con secciones desplegables
+    - navigation.expand        # Expande el menú por defecto
+    - navigation.instant       # Carga rápida entre páginas
+    - content.code.copy        # Botón copiar código
+    - toc.integrate            # Índice dentro de la página
+    - search.highlight         # Resalta términos buscados
+    - content.tabs.link        # Sincroniza pestañas de código
+    - content.action.edit      # Botón de editar (opcional)
+
+  palette:
+    # Claro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Activar modo oscuro
+    # Oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Activar modo claro
+ 
+  font:
+    text: "Roboto"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid      # Permitir diagramas Mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - with-pdf:
+      toc_level: 3
+      output_path: docs.pdf
+      cover_title: "SCHEMAS"
+      cover_subtitle: "Documentación generada automáticamente"
+      author: "Tamara"
+
+extra_css:
+  - css/styles.css

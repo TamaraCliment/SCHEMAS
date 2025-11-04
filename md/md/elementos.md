@@ -11,5 +11,7 @@ Algunos de los más usados son:
 - Secuencias no ordenadas, **xs:all**, representa a todos los elementos en cualquier orden.
 
   **_Ejercicio resuelto:_** Esquema correspondiente a un documento XML para estructurar la información personal sobre alumnos.
+  
+  !!! example "Ejemplo de uso"
 
 ![](../img/Ejemplo.JPG)

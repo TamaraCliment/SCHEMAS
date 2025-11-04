@@ -6,6 +6,7 @@ Están definidos por las facetas, que solo pueden aplicarse sobre tipos simples 
 - **enumeration**: Restringe a un determinado conjunto de valores.
   **_Ejercicio resuelto:_** Creación de una cadena de texto con una longitud máxima de 9 caracteres y dos valores posibles.
 
+!!! example "Ejemplo de uso"
 ```xsd
 <xs:simpleType name="estado">
     <xs:restriction base="xs:string">
@@ -18,8 +19,9 @@ Están definidos por las facetas, que solo pueden aplicarse sobre tipos simples 
 
 - **whitespace:** Define el tratamiento de espacios (preserve/replace, collapse).
 
-  **_Ejercicio resuelto:_** Creación de un elemento en el que se respetan los espacios tal y como se han introducido
+  **_Ejercicio resuelto:_** Creación de un elemento en el que se respetan los espacios tal y como se han introducido.
 
+!!! example "Ejemplo de uso"
 ```xsd
 <xs:simpleType name="nombre">
     <xs:restriction base="xs:string">
@@ -32,6 +34,7 @@ Están definidos por las facetas, que solo pueden aplicarse sobre tipos simples 
 - **totalDigits, fractionDigits:** número de dígitos totales y decimales de un número decimal.
   **_Ejercicio resuelto:_** Creación de un elemento calificaciones de dos dígitos cuyo valor es un número entero comprendido entre 1 y 10, ambos inclusive.
 
+!!! example "Ejemplo de uso"
 ```xsd
 <xs:simpleType name="calificaciones">
     <xs:restriction base="xs:integer">
@@ -48,6 +51,7 @@ Están definidos por las facetas, que solo pueden aplicarse sobre tipos simples 
 
 **_Ejercicio resuelto:_** El ejemplo siguiente muestra la utilización de pattern para crear la máscara de un DNI.
 
+!!! example "Ejemplo de uso"
 ```xsd
 <xs:simpleType name="dni">
     <xs:restriction base="xs:string">

@@ -4,6 +4,7 @@ En los DTD se diferencia entre los elementos terminales y los no terminales ¿en
 
 **_Ejercicio resuelto:_** Creación de un elemento simple de nombre edad que representa la edad de un alumno de la ESO, por tanto su rango está entre los 12 y los 18 años.
 
+!!! example "Ejemplo de uso"
 ```xsd
 <xs:simpleType name="edad">
     <xs:restriction base="xs:positiveInteger">
@@ -16,6 +17,8 @@ En los DTD se diferencia entre los elementos terminales y los no terminales ¿en
 
 ![](../img/EjemploLista.JPG)
 
+
+!!! example "Ejemplo de uso"
 ```xsd
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
@@ -40,6 +43,7 @@ En los DTD se diferencia entre los elementos terminales y los no terminales ¿en
 - **Tipos de datos compuestos:** El elemento **xsd:complexType** permite definir estructuras complejas de datos. Su contenido son las declaraciones de elementos y atributos, o referencias a elementos y atributos declarados de forma global. Para determinar el orden en que estos elementos aparecen en el documento XML se utiliza el elemento .
   **_Ejercicio resuelto:_** Creación de un elemento compuesto de nombre alumno, formado por los elementos nombre, apellidos, web personal.
 
+!!! example "Ejemplo de uso"
 ```xsd
 <xs:complexType  name="alumno">
       <xs:sequence>

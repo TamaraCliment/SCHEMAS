@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+  <div style="text-align: right; margin-top: 1em;">
+    <a href="{{ base_url }}/docs.pdf" class="md-button md-button--primary">
+      📄 Descargar toda la documentación en PDF
+    </a>
+  </div>
+{% endblock %}
